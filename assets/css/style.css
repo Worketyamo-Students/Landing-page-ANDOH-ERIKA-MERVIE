@@ -1,0 +1,18 @@
+
+:root{
+    --blue: #2563EB;
+    --text-primary-color: #0F172A;
+    --tex-secondary-color: #475569;
+    --gray: #475569;
+    --violet: #581C87BF;
+
+    /* couleurs du dégradé du bas (linéar gradiant) */
+
+    --grandiant1: #312E81;
+    --gradiant2: #1E40AF;
+    --grandiant3: #1E3A8A;
+    --gradiant4: #701A75;
+}
+
+
+
