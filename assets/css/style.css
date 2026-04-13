@@ -4,6 +4,7 @@
     --text-primary-color: #0F172A;
     --tex-secondary-color: #475569;
     --gray: #475569;
+    --gray1: #F1F5F9;
     --violet: #581C87BF;
 
     /* couleurs du dégradé du bas (linéar gradiant) */
@@ -20,6 +21,10 @@ header{
     align-items: center;
     padding: 2.4rem;
     font-size: 1.8rem;
+    box-shadow: 0 1px 9px var(--gray);
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
 }
 
 header h1{
@@ -66,7 +71,7 @@ header div a{
     color: var(--blue);
 }
 
-header div button{
+button{
     font-size: 1.8rem;
     color: white;
     border: none;
@@ -80,7 +85,7 @@ header div button{
     cursor: pointer;
 }
 
-header div button:hover{
+button:hover{
     transform: translateY(-5px);
     box-shadow: 0 10px 14px var(--gradiant2);
 }
@@ -93,6 +98,128 @@ header div button:hover{
     .menu{
         display: block;
     }
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    color: var(--gray);
+    margin: 8rem 8rem;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+}
+
+.hero-section_enfant{
+    width: 66rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: center;
+}
+
+.hero-section_enfant h1{
+   color: var(--text-primary-color);
+   font-size: 7.2rem;
+}
+
+.hero-section_enfant p{
+   font-size: 1.8rem;
+}
+
+.hero-enfant{
+    display: flex;
+}
+
+.hero-enfant.un{
+    gap: 1.6rem;
+    width: 100%;
+}
+
+.hero-enfant.un div{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.hero-enfant.un div img{
+    position: absolute;
+    margin-left: 1rem;
+}
+
+.hero-enfant.un div input{
+    border-radius: 0.8rem;
+    padding: 1.2rem 3.8rem;
+    border: solid 2px var(--gray1);
+    width: 100%;
+}
+
+.hero-enfant.deux{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4.523rem;
+    justify-content: space-between;
+    padding: 1.6rem;
+    background-color: var(--gray1);
+}
+
+.hero-enfant.deux div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.hero-enfant.deux div span{
+    font-size: 1.8rem;
+}
+
+@media (max-width: 1451px) {
+    .hero-section{
+        gap: 8rem;
+    }
+    .image-hero{
+        width: 66rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+}
+
+@media (max-width: 765px) {
+    .hero-section{
+        margin: 1rem;
+        padding-top: 4rem;
+    }
+    header{
+        padding: 1rem;
+    }
+    .image-hero{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hero-section{
+        font-size: 1.6rem;
+    }
+
+    .hero-section_enfant h1{
+        font-size: 4rem;
+    }
+    button{
+        font-size: 1.6rem;
+    }
+    .hero-enfant.un div img{
+        display: none;
+    }
+    .hero-enfant.un div input{
+        padding-left: 0.7rem;
+    }
+
 }
 
 .part2 .text .titre{
