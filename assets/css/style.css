@@ -115,7 +115,7 @@ button:hover{
 }
 
 .hero-section_enfant{
-    width: 66rem;
+    width: 60rem;
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
