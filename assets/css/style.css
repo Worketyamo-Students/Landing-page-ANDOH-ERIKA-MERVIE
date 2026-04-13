@@ -29,8 +29,7 @@ header h1{
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
+
 header{
     border: solid;
     display: flex;
@@ -46,7 +45,7 @@ header h1{
     cursor: pointer;
 }
 
->>>>>>> main
+
 nav ul{
     display: flex;
     list-style: none;
