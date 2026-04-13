@@ -25,6 +25,7 @@ header{
     position: sticky;
     top: 0;
     backdrop-filter: blur(10px);
+    z-index: 100;
 }
 
 header h1{
@@ -109,6 +110,10 @@ button:hover{
     gap: 3.2rem;
 }
 
+.hero-section.deux{
+    flex-wrap: wrap-reverse;
+}
+
 .hero-section_enfant{
     width: 66rem;
     display: flex;
@@ -120,6 +125,10 @@ button:hover{
 .hero-section_enfant h1{
    color: var(--text-primary-color);
    font-size: 7.2rem;
+}
+
+.hero-section_enfant.deux h1{
+   font-size: 5.6rem;
 }
 
 .hero-section_enfant p{
@@ -174,6 +183,28 @@ button:hover{
     font-size: 1.8rem;
 }
 
+
+.trois-images{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    display: flex;
+    gap: 1.6rem;
+    flex-wrap: nowrap;
+}
+
+.trois-images img{
+    z-index: 0;
+    flex: 1;
+}
+
+.trois-images .img1{
+    transform: translateY(80px);
+}
+
+.trois-images .img2{
+    transform: translateY(-80px);
+}
+
 @media (max-width: 1451px) {
     .hero-section{
         gap: 8rem;
@@ -181,10 +212,9 @@ button:hover{
     .image-hero{
         width: 66rem;
     }
-    body{
-        overflow-x: hidden;
+    .trois-images{
+        margin-top: 3rem;
     }
-
 }
 
 @media (max-width: 765px) {
@@ -198,6 +228,13 @@ button:hover{
     .image-hero{
         width: 100%;
     }
+    .trois-images{
+        width: 100%;
+        gap: .5rem;
+    }
+    .trois-images img{
+        width: 11.5rem;
+    }
 
 }
 
@@ -207,7 +244,7 @@ button:hover{
         font-size: 1.6rem;
     }
 
-    .hero-section_enfant h1{
+    .hero-section_enfant h1,.hero-section_enfant.deux h1{
         font-size: 4rem;
     }
     button{
@@ -220,6 +257,12 @@ button:hover{
         padding-left: 0.7rem;
     }
 
+}
+
+@media (max-width: 400px){
+    .trois-images img{
+        width: 9.5rem;
+    }
 }
 
 .part2 .text .titre{
