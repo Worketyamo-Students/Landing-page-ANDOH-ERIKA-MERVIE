@@ -341,3 +341,51 @@ button:hover{
 .part3{
     position: relative;
 }
+.partie4{
+    width: 100%;
+}
+.ensemble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+}
+.ecrire{
+    width: 45%;
+}
+.ecrire h1{
+font-size: 40px;
+}
+.tabl{
+    display: flex;
+    width: 100%;
+}
+.cellule{
+    border: .1rem var(--gray) solid ;
+    padding: .9rem 4rem;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+}
+.arondi{
+    border-radius: 10PX;
+}
+.bg-color{
+background-color: Blue Gray/100;
+}
+p{
+    color: #0F172A;
+    font-size: 18px;
+}
+a{
+    font-size: 16px;
+}
+.final{
+    display: flex;
+    justify-content: space-between;
+
+}
+.final-part{
+    background: linear-gradient(to);
+}
